@@ -1,0 +1,27 @@
+info:
+  contact:
+    name: Cashbag-B2B
+    url: https://cashbag-b2b.vn
+  description: |
+    All APIs APP for Server AFF.
+  termsOfService: https://cashbag-b2b.vn
+  title: Server AFF - API APP
+  version: "1.0"
+paths:
+  /ping:
+    get:
+      consumes:
+      - application/json
+      operationId: common-ping
+      produces:
+      - application/json
+      responses: {}
+      summary: Ping
+      tags:
+      - Common
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

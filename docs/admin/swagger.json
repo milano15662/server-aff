@@ -1,0 +1,38 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "All APIs for Server AFF.\n",
+        "title": "Server AFF - API",
+        "termsOfService": "https://cashbag-b2b.vn",
+        "contact": {
+            "name": "Cashbag-B2B",
+            "url": "https://cashbag-b2b.vn"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/ping": {
+            "get": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Common"
+                ],
+                "summary": "Ping",
+                "operationId": "common-ping",
+                "responses": {}
+            }
+        }
+    },
+    "securityDefinitions": {
+        "ApiKeyAuth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    }
+}
